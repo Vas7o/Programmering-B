@@ -1,0 +1,89 @@
+/* Add a gray line with page indicators */
+.nav-stripe {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .nav-stripe ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-stripe li {
+    margin-right: 20px;
+  }
+  
+  .nav-stripe a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .nav-stripe a.active {
+    color: #337ab7;
+    border-bottom: 2px solid #337ab7;
+  }
+  
+  .nav-stripe a:hover {
+    color: #337ab7;
+  }
+  
+  /* Add a gray line with page indicators */
+  .nav-stripe .indicator {
+    position: relative;
+    top: -10px;
+    height: 2px;
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+  
+  .nav-stripe .indicator .step {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .nav-stripe .indicator .step.active {
+    background-color: #337ab7;
+  }
+  
+  .nav-stripe .indicator .step:hover {
+    background-color: #337ab7;
+  }
+  
+  /* Add a colored bar under the gray line */
+  .nav-stripe .color-bar {
+    height: 5px;
+    border-radius: 10px;
+  }
+  
+  .nav-stripe .color-bar.page1 {
+    background-color: #ff69b4;
+  }
+  
+  .nav-stripe .color-bar.page2 {
+    background-color: #33cc33;
+  }
+  
+  .nav-stripe .color-bar.page3 {
+    background-color: #6666ff;
+  }
+  
+  .nav-stripe .color-bar.page4 {
+    background-color: #ffff66;
+  }
+  
+  .nav-stripe .color-bar.page5 {
+    background-color: #cc0099;
+  }
+  
+  .nav-stripe .color-bar.page6 {
+    background-color: #0099cc;
+  }
