@@ -1,89 +1,77 @@
-/* Add a gray line with page indicators */
-.nav-stripe {
-    background-color: #f7f7f7;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .nav-stripe ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .nav-stripe li {
-    margin-right: 20px;
-  }
-  
-  .nav-stripe a {
-    color: #666;
-    text-decoration: none;
-  }
-  
-  .nav-stripe a.active {
-    color: #337ab7;
-    border-bottom: 2px solid #337ab7;
-  }
-  
-  .nav-stripe a:hover {
-    color: #337ab7;
-  }
-  
-  /* Add a gray line with page indicators */
-  .nav-stripe .indicator {
-    position: relative;
-    top: -10px;
-    height: 2px;
-    background-color: #ccc;
-    border-radius: 10px;
-  }
-  
-  .nav-stripe .indicator .step {
-    position: absolute;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    background-color: #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  .nav-stripe .indicator .step.active {
-    background-color: #337ab7;
-  }
-  
-  .nav-stripe .indicator .step:hover {
-    background-color: #337ab7;
-  }
-  
-  /* Add a colored bar under the gray line */
-  .nav-stripe .color-bar {
-    height: 5px;
-    border-radius: 10px;
-  }
-  
-  .nav-stripe .color-bar.page1 {
-    background-color: #ff69b4;
-  }
-  
-  .nav-stripe .color-bar.page2 {
-    background-color: #33cc33;
-  }
-  
-  .nav-stripe .color-bar.page3 {
-    background-color: #6666ff;
-  }
-  
-  .nav-stripe .color-bar.page4 {
-    background-color: #ffff66;
-  }
-  
-  .nav-stripe .color-bar.page5 {
-    background-color: #cc0099;
-  }
-  
-  .nav-stripe .color-bar.page6 {
-    background-color: #0099cc;
-  }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 20px 0;
+}
+
+.content {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.subheader {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.subcontent {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.subcontent p {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: left;
+  flex: 1;
+}
+
+.image-frame {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #000;
+  margin-left: 20px;
+  flex-shrink: 0;
+  background-image: url('https://i.scdn.co/image/bf9f29caf80ba2d1541e30a77fe4123a4410c858');
+  background-size: cover;
+  background-position: center;
+}
+
+.image-frame-left {
+  width: 300px;
+  height: 500px;
+  border: 1px solid #000;
+  margin-right: 20px;
+  flex-shrink: 0;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8DCIQqLRvr0o3c29A6qoEaqVbxEiWtAsnWQ&s');
+  background-size: cover;
+  background-position: center;
+}
