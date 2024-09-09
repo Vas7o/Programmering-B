@@ -269,12 +269,12 @@
   }
 
   .right-albums, .left-albums {
-    flex-basis: 45%; /* adjust the width to your liking */
-    margin: 20px; /* add some margin for spacing */
+    flex-basis: 45%;
+    margin: 20px;
   }
 
   .right-albums {
-    margin-right: 20px; /* add some extra margin to create a gap */
+    margin-right: 20px;
   }
 }
 
